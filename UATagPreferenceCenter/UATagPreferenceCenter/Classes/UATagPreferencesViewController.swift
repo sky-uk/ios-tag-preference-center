@@ -8,7 +8,7 @@ import AirshipKit
 /**
  * Displays a list of tag based preferences
  */
-public class UATagPreferencesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UATagPreferencesDelegate, UATagPreferenceCellDelegate {
+open class UATagPreferencesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UATagPreferencesDelegate, UATagPreferenceCellDelegate {
     
     @IBOutlet weak public var preferencesTable: UITableView!
     @IBOutlet weak public var closeButton: UIButton!
