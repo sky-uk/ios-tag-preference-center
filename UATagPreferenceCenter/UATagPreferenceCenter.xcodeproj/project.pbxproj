@@ -7,35 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		821E2CCA1E65B28500D684BB /* UATagPreferencesStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821E2CC91E65B28500D684BB /* UATagPreferencesStyle.swift */; };
 		8229A0411E55CA2D005F226F /* UATagPreferenceCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8229A0391E55CA2D005F226F /* UATagPreferenceCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8229A0421E55CA2D005F226F /* UATagPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A03A1E55CA2D005F226F /* UATagPreferences.swift */; };
-		8229A0431E55CA2D005F226F /* UATagPreferencesInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A03B1E55CA2D005F226F /* UATagPreferencesInternal.swift */; };
-		8229A0441E55CA2D005F226F /* UATagPreferencesOpenAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A03C1E55CA2D005F226F /* UATagPreferencesOpenAction.swift */; };
-		8229A0451E55CA2D005F226F /* UATagPreferencesSaveAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A03D1E55CA2D005F226F /* UATagPreferencesSaveAction.swift */; };
-		8229A0471E55CA2D005F226F /* UATagPreferencesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A03F1E55CA2D005F226F /* UATagPreferencesViewCell.swift */; };
-		8229A0481E55CA2D005F226F /* UATagPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A0401E55CA2D005F226F /* UATagPreferencesViewController.swift */; };
 		8229A04C1E55CA53005F226F /* UATagPreferencesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8229A04A1E55CA53005F226F /* UATagPreferencesViewCell.xib */; };
 		8229A04D1E55CA53005F226F /* UATagPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8229A04B1E55CA53005F226F /* UATagPreferencesViewController.xib */; };
-		825AEE761E8930BB00D7B7F7 /* UATagPreferencesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825AEE751E8930BB00D7B7F7 /* UATagPreferencesDelegate.swift */; };
 		82E26E011E76BD25007EA1F0 /* UATagPreferenceCenterStyle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82E26E001E76BD25007EA1F0 /* UATagPreferenceCenterStyle.plist */; };
+		A151185C2163D2F700C7F12E /* UATagPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15118502163D2F500C7F12E /* UATagPreference.swift */; };
+		A151185D2163D2F700C7F12E /* UATagPreferenceDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15118512163D2F500C7F12E /* UATagPreferenceDataHandler.swift */; };
+		A151185E2163D2F700C7F12E /* UATagPreferencesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15118522163D2F500C7F12E /* UATagPreferencesDelegate.swift */; };
+		A151185F2163D2F700C7F12E /* UATagPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15118532163D2F500C7F12E /* UATagPreferencesViewController.swift */; };
+		A15118602163D2F700C7F12E /* UATagPreferencesSaveAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15118542163D2F600C7F12E /* UATagPreferencesSaveAction.swift */; };
+		A15118612163D2F700C7F12E /* UATagPreferenceCenterStringTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15118552163D2F600C7F12E /* UATagPreferenceCenterStringTypes.swift */; };
+		A15118622163D2F700C7F12E /* UATagPreferenceCenterInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15118562163D2F600C7F12E /* UATagPreferenceCenterInternal.swift */; };
+		A15118632163D2F700C7F12E /* UATagPreferencesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15118572163D2F600C7F12E /* UATagPreferencesViewCell.swift */; };
+		A15118642163D2F700C7F12E /* UATagPreferenceCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15118582163D2F600C7F12E /* UATagPreferenceCenter.swift */; };
+		A15118652163D2F700C7F12E /* UATagPreferencesStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15118592163D2F600C7F12E /* UATagPreferencesStyle.swift */; };
+		A15118662163D2F700C7F12E /* UATagPreferenceCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151185A2163D2F600C7F12E /* UATagPreferenceCellDelegate.swift */; };
+		A15118672163D2F700C7F12E /* UATagPreferencesOpenAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151185B2163D2F600C7F12E /* UATagPreferencesOpenAction.swift */; };
+		A151186A2163D33F00C7F12E /* AirshipKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15118692163D33F00C7F12E /* AirshipKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		821E2CC91E65B28500D684BB /* UATagPreferencesStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferencesStyle.swift; path = Classes/UATagPreferencesStyle.swift; sourceTree = "<group>"; };
 		8229A02D1E55C9B1005F226F /* UATagPreferenceCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UATagPreferenceCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8229A0311E55C9B1005F226F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8229A0391E55CA2D005F226F /* UATagPreferenceCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UATagPreferenceCenter.h; sourceTree = "<group>"; };
-		8229A03A1E55CA2D005F226F /* UATagPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferences.swift; path = Classes/UATagPreferences.swift; sourceTree = "<group>"; };
-		8229A03B1E55CA2D005F226F /* UATagPreferencesInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferencesInternal.swift; path = Classes/UATagPreferencesInternal.swift; sourceTree = "<group>"; };
-		8229A03C1E55CA2D005F226F /* UATagPreferencesOpenAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferencesOpenAction.swift; path = Classes/UATagPreferencesOpenAction.swift; sourceTree = "<group>"; };
-		8229A03D1E55CA2D005F226F /* UATagPreferencesSaveAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferencesSaveAction.swift; path = Classes/UATagPreferencesSaveAction.swift; sourceTree = "<group>"; };
-		8229A03F1E55CA2D005F226F /* UATagPreferencesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferencesViewCell.swift; path = Classes/UATagPreferencesViewCell.swift; sourceTree = "<group>"; };
-		8229A0401E55CA2D005F226F /* UATagPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferencesViewController.swift; path = Classes/UATagPreferencesViewController.swift; sourceTree = "<group>"; };
 		8229A04A1E55CA53005F226F /* UATagPreferencesViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UATagPreferencesViewCell.xib; path = UATagPreferenceCenter/Resources/UATagPreferencesViewCell.xib; sourceTree = "<group>"; };
 		8229A04B1E55CA53005F226F /* UATagPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UATagPreferencesViewController.xib; path = UATagPreferenceCenter/Resources/UATagPreferencesViewController.xib; sourceTree = "<group>"; };
-		825AEE751E8930BB00D7B7F7 /* UATagPreferencesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferencesDelegate.swift; path = Classes/UATagPreferencesDelegate.swift; sourceTree = "<group>"; };
 		82E26E001E76BD25007EA1F0 /* UATagPreferenceCenterStyle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = UATagPreferenceCenterStyle.plist; path = UATagPreferenceCenter/Resources/UATagPreferenceCenterStyle.plist; sourceTree = "<group>"; };
+		A15118502163D2F500C7F12E /* UATagPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreference.swift; path = Classes/UATagPreference.swift; sourceTree = "<group>"; };
+		A15118512163D2F500C7F12E /* UATagPreferenceDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferenceDataHandler.swift; path = Classes/UATagPreferenceDataHandler.swift; sourceTree = "<group>"; };
+		A15118522163D2F500C7F12E /* UATagPreferencesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferencesDelegate.swift; path = Classes/UATagPreferencesDelegate.swift; sourceTree = "<group>"; };
+		A15118532163D2F500C7F12E /* UATagPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferencesViewController.swift; path = Classes/UATagPreferencesViewController.swift; sourceTree = "<group>"; };
+		A15118542163D2F600C7F12E /* UATagPreferencesSaveAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferencesSaveAction.swift; path = Classes/UATagPreferencesSaveAction.swift; sourceTree = "<group>"; };
+		A15118552163D2F600C7F12E /* UATagPreferenceCenterStringTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferenceCenterStringTypes.swift; path = Classes/UATagPreferenceCenterStringTypes.swift; sourceTree = "<group>"; };
+		A15118562163D2F600C7F12E /* UATagPreferenceCenterInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferenceCenterInternal.swift; path = Classes/UATagPreferenceCenterInternal.swift; sourceTree = "<group>"; };
+		A15118572163D2F600C7F12E /* UATagPreferencesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferencesViewCell.swift; path = Classes/UATagPreferencesViewCell.swift; sourceTree = "<group>"; };
+		A15118582163D2F600C7F12E /* UATagPreferenceCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferenceCenter.swift; path = Classes/UATagPreferenceCenter.swift; sourceTree = "<group>"; };
+		A15118592163D2F600C7F12E /* UATagPreferencesStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferencesStyle.swift; path = Classes/UATagPreferencesStyle.swift; sourceTree = "<group>"; };
+		A151185A2163D2F600C7F12E /* UATagPreferenceCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferenceCellDelegate.swift; path = Classes/UATagPreferenceCellDelegate.swift; sourceTree = "<group>"; };
+		A151185B2163D2F600C7F12E /* UATagPreferencesOpenAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UATagPreferencesOpenAction.swift; path = Classes/UATagPreferencesOpenAction.swift; sourceTree = "<group>"; };
+		A15118692163D33F00C7F12E /* AirshipKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AirshipKit.framework; path = "../../sky-app-ios/Carthage/Build/iOS/AirshipKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A151186A2163D33F00C7F12E /* AirshipKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +66,7 @@
 				8229A0491E55CA3E005F226F /* Resources */,
 				8229A02F1E55C9B1005F226F /* UATagPreferenceCenter */,
 				8229A02E1E55C9B1005F226F /* Products */,
+				A15118682163D33E00C7F12E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,14 +81,18 @@
 		8229A02F1E55C9B1005F226F /* UATagPreferenceCenter */ = {
 			isa = PBXGroup;
 			children = (
-				825AEE751E8930BB00D7B7F7 /* UATagPreferencesDelegate.swift */,
-				8229A03A1E55CA2D005F226F /* UATagPreferences.swift */,
-				821E2CC91E65B28500D684BB /* UATagPreferencesStyle.swift */,
-				8229A03B1E55CA2D005F226F /* UATagPreferencesInternal.swift */,
-				8229A03C1E55CA2D005F226F /* UATagPreferencesOpenAction.swift */,
-				8229A03D1E55CA2D005F226F /* UATagPreferencesSaveAction.swift */,
-				8229A03F1E55CA2D005F226F /* UATagPreferencesViewCell.swift */,
-				8229A0401E55CA2D005F226F /* UATagPreferencesViewController.swift */,
+				A15118502163D2F500C7F12E /* UATagPreference.swift */,
+				A151185A2163D2F600C7F12E /* UATagPreferenceCellDelegate.swift */,
+				A15118582163D2F600C7F12E /* UATagPreferenceCenter.swift */,
+				A15118562163D2F600C7F12E /* UATagPreferenceCenterInternal.swift */,
+				A15118552163D2F600C7F12E /* UATagPreferenceCenterStringTypes.swift */,
+				A15118512163D2F500C7F12E /* UATagPreferenceDataHandler.swift */,
+				A15118522163D2F500C7F12E /* UATagPreferencesDelegate.swift */,
+				A151185B2163D2F600C7F12E /* UATagPreferencesOpenAction.swift */,
+				A15118542163D2F600C7F12E /* UATagPreferencesSaveAction.swift */,
+				A15118592163D2F600C7F12E /* UATagPreferencesStyle.swift */,
+				A15118572163D2F600C7F12E /* UATagPreferencesViewCell.swift */,
+				A15118532163D2F500C7F12E /* UATagPreferencesViewController.swift */,
 				8229A0381E55CA09005F226F /* Supporting Files */,
 			);
 			path = UATagPreferenceCenter;
@@ -99,6 +115,14 @@
 				82E26E001E76BD25007EA1F0 /* UATagPreferenceCenterStyle.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		A15118682163D33E00C7F12E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A15118692163D33F00C7F12E /* AirshipKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +168,7 @@
 				TargetAttributes = {
 					8229A02C1E55C9B1005F226F = {
 						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -184,14 +208,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				825AEE761E8930BB00D7B7F7 /* UATagPreferencesDelegate.swift in Sources */,
-				8229A0451E55CA2D005F226F /* UATagPreferencesSaveAction.swift in Sources */,
-				8229A0471E55CA2D005F226F /* UATagPreferencesViewCell.swift in Sources */,
-				8229A0441E55CA2D005F226F /* UATagPreferencesOpenAction.swift in Sources */,
-				8229A0481E55CA2D005F226F /* UATagPreferencesViewController.swift in Sources */,
-				8229A0431E55CA2D005F226F /* UATagPreferencesInternal.swift in Sources */,
-				821E2CCA1E65B28500D684BB /* UATagPreferencesStyle.swift in Sources */,
-				8229A0421E55CA2D005F226F /* UATagPreferences.swift in Sources */,
+				A15118632163D2F700C7F12E /* UATagPreferencesViewCell.swift in Sources */,
+				A15118652163D2F700C7F12E /* UATagPreferencesStyle.swift in Sources */,
+				A15118602163D2F700C7F12E /* UATagPreferencesSaveAction.swift in Sources */,
+				A151185D2163D2F700C7F12E /* UATagPreferenceDataHandler.swift in Sources */,
+				A15118662163D2F700C7F12E /* UATagPreferenceCellDelegate.swift in Sources */,
+				A151185C2163D2F700C7F12E /* UATagPreference.swift in Sources */,
+				A15118672163D2F700C7F12E /* UATagPreferencesOpenAction.swift in Sources */,
+				A151185F2163D2F700C7F12E /* UATagPreferencesViewController.swift in Sources */,
+				A151185E2163D2F700C7F12E /* UATagPreferencesDelegate.swift in Sources */,
+				A15118612163D2F700C7F12E /* UATagPreferenceCenterStringTypes.swift in Sources */,
+				A15118642163D2F700C7F12E /* UATagPreferenceCenter.swift in Sources */,
+				A15118622163D2F700C7F12E /* UATagPreferenceCenterInternal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +269,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -307,10 +335,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Users/mpe18/Documents/code/sky-app-ios/Carthage/Build/**";
 				INFOPLIST_FILE = UATagPreferenceCenter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = UrbanAirship.UATagPreferenceCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -329,9 +359,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				INFOPLIST_FILE = UATagPreferenceCenter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UrbanAirship.UATagPreferenceCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";

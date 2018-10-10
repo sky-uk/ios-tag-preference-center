@@ -7,7 +7,7 @@ import UIKit
 /**
  * A preference tag selection cell
  */
-open class UATagPreferencesViewCell: UITableViewCell {
+public class UATagPreferencesViewCell: UITableViewCell {
     
     @IBOutlet weak public var preferenceLabel: UILabel!
     @IBOutlet weak public var preferenceSwitch: UISwitch!
@@ -26,7 +26,7 @@ open class UATagPreferencesViewCell: UITableViewCell {
         
     }
     
-    @IBAction func preferenceSwitchTouched(_ sender: Any) {
+    @IBAction open func preferenceSwitchTouched(_ sender: Any) {
         if self.preferenceSwitch.isOn == true {
             self.delegate?.preferenceTagSelected(tagName: self.preferenceTag, tagGroup: self.preferenceTagGroup)
             
