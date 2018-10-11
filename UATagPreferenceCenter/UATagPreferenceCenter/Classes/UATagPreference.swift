@@ -7,9 +7,9 @@
  */
 public class UATagPreference {
     
-    private (set) var tag: String
-    private (set) var displayName: String
-    private (set) var tagGroup: String
+      public var tag: String
+      public var displayName: String
+      public var tagGroup: String
     
     // MARK: - Initialization
     

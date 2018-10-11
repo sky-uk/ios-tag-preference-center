@@ -4,19 +4,19 @@
 
 import AirshipKit
 
-class UATagPreferenceDataHandler {
+public class UATagPreferenceDataHandler {
     
     var delegate: UATagPreferencesDelegate?
     var jsonData: NSDictionary?
     var useTagGroups: Bool = false
     
-    private (set) var userPreferences: [UATagPreference]
-    private var allPreferenceData = [(tagPreference: UATagPreference, hasTag: Bool)]()
-    private var allDeviceTagGroupsAndTags = [String: [String]]()
+      var userPreferences: [UATagPreference]
+      var allPreferenceData = [(tagPreference: UATagPreference, hasTag: Bool)]()
+      var allDeviceTagGroupsAndTags = [String: [String]]()
     
     // MARK: - Initialization
     
-    init(with preferences: [UATagPreference] = [UATagPreference]()) {
+    public init(with preferences: [UATagPreference] = [UATagPreference]()) {
         
         self.userPreferences = preferences
         
@@ -31,7 +31,7 @@ class UATagPreferenceDataHandler {
     
     // MARK: - Tag Preparation
     
-    private func getData(from endpoint: endPoint) {
+      func getData(from endpoint: endPoint) {
         
         let defaultSession = URLSession(configuration: URLSessionConfiguration.default)
         var dataTask: URLSessionDataTask?
@@ -80,7 +80,7 @@ class UATagPreferenceDataHandler {
         }
     }
     
-    private func processData(){
+      func processData(){
         // sort data for tag groups
         if self.useTagGroups == true {
             self.prepareDeviceTagGroupData()
@@ -99,7 +99,7 @@ class UATagPreferenceDataHandler {
         }
     }
     
-    private func prepareDeviceTagGroupData() {
+      func prepareDeviceTagGroupData() {
         if let data = self.jsonData {
             if let channelData = data.object(forKey: apiKeys.channel.rawValue) as? NSDictionary {
                 
@@ -129,7 +129,7 @@ class UATagPreferenceDataHandler {
         }
     }
     
-    private func comparePreferenceAndDeviceTags() {
+      func comparePreferenceAndDeviceTags() {
         
         var counter = 0
         for preferenceData in self.allPreferenceData {
@@ -176,7 +176,7 @@ class UATagPreferenceDataHandler {
         return prefsToReturn
     }
     
-    class func finalizePreferences(preferences: [UATagPreference]?, style: UATagPreferencesStyle?, title: String?, useSavedPreferences: Bool) -> (preferences: [UATagPreference], style: UATagPreferencesStyle, title: String)? {
+    public class func finalizePreferences(preferences: [UATagPreference]?, style: UATagPreferencesStyle?, title: String?, useSavedPreferences: Bool) -> (preferences: [UATagPreference], style: UATagPreferencesStyle, title: String)? {
         var prefsToReturn: [UATagPreference]?
         var styleToReturn: UATagPreferencesStyle?
         var titleToReturn: String?

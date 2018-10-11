@@ -115,18 +115,18 @@ public class UATagPreferenceCenter {
         return Bundle(for: self)
     }
     
-    // MARK: - Private Methods
+    // MARK: -   Methods
     
-    private class func startup(preferences: [UATagPreference], style: UATagPreferencesStyle, preferencesTitle: String) {
+      class func startup(preferences: [UATagPreference], style: UATagPreferencesStyle, preferencesTitle: String) {
         if UAirship.shared() == nil {
             NSLog("ERROR: UATagPreferenceCenter cannot run unless the Urban Airship SDK is running. Please ensure that UAirship.takeOff has been called in the AppDelegate")
             return
         }
-        if let window = UIApplication.shared.keyWindow {
-            if let topController = window.rootViewController {
-                let preferenceViewController = UATagPreferencesViewController(preferences: preferences, style: style, title: preferencesTitle)
-                topController.present(preferenceViewController, animated: true, completion: nil) 
-            }
-        }
+//        if let window = UIApplication.shared.keyWindow {
+//            if let topController = window.rootViewController {
+//                let preferenceViewController = UATagPreferencesViewController(preferences: preferences, style: style, title: preferencesTitle)
+//                topController.present(preferenceViewController, animated: true, completion: nil)
+//            }
+//        }
     }
 }

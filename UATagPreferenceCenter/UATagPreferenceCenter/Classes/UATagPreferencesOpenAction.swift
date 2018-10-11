@@ -11,7 +11,7 @@ class UATagPreferencesOpenAction: UAAction {
     
     static let actionName = "ua_tag_preference_open_action"
     
-    private static let styleName = "ua_remote_tag_preference_style"
+      static let styleName = "ua_remote_tag_preference_style"
     
     open override func acceptsArguments(_ arguments: UAActionArguments) -> Bool {
         return (arguments.situation == .backgroundPush || arguments.situation == .manualInvocation || arguments.situation == .foregroundInteractiveButton || arguments.situation == .launchedFromPush)
@@ -86,13 +86,13 @@ class UATagPreferencesOpenAction: UAAction {
         actionRegistry.register(UATagPreferencesOpenAction(), name: UATagPreferencesOpenAction.actionName)
     }
     
-    private class func setStyle(style: UATagPreferencesStyle) {
+      class func setStyle(style: UATagPreferencesStyle) {
         let defaults = UserDefaults.standard
         let styleData: Data = NSKeyedArchiver.archivedData(withRootObject: style.getStyleDict())
         defaults.set(styleData, forKey: UATagPreferencesOpenAction.styleName)
     }
     
-    private class func loadStyle() -> UATagPreferencesStyle {
+      class func loadStyle() -> UATagPreferencesStyle {
         let defaults = UserDefaults.standard
         if let savedStyledict = defaults.object(forKey: UATagPreferencesOpenAction.styleName) as? Data {
             let styleToReturn = NSKeyedUnarchiver.unarchiveObject(with: savedStyledict) as! [String: AnyObject]

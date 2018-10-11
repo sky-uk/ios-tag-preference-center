@@ -5,25 +5,25 @@
 import Foundation
 import AirshipKit
 
-class UATagPreferenceCenterInternal {
+public class UATagPreferenceCenterInternal {
     
-    var title: String = ""
-    var useTagGroups: Bool = false
+    public var title: String = ""
+    public var useTagGroups: Bool = false
     
-    private let dataHandler: UATagPreferenceDataHandler
-    private (set) var preferenceCenterStyle: UATagPreferencesStyle
+    let dataHandler: UATagPreferenceDataHandler
+    public var preferenceCenterStyle: UATagPreferencesStyle
     
     static let savedPreferencesName = "saved_preferences"
     static let deviceGroup = "device"
     
     // MARK: - Initiazation
     
-    init() {
+    public init() {
         self.dataHandler = UATagPreferenceDataHandler()
         self.preferenceCenterStyle = UATagPreferencesStyle()
     }
     
-    init(preferences: [UATagPreference], preferenceStyle: UATagPreferencesStyle = UATagPreferencesStyle(), preferenceDelegate: UATagPreferencesDelegate?, title: String = "") {
+    public init(preferences: [UATagPreference], preferenceStyle: UATagPreferencesStyle = UATagPreferencesStyle(), preferenceDelegate: UATagPreferencesDelegate?, title: String = "") {
         
         self.dataHandler = UATagPreferenceDataHandler(with: preferences)
 
@@ -37,7 +37,7 @@ class UATagPreferenceCenterInternal {
     
     // MARK: - Adding and Removing Tags
     
-    func addPreference(named: String, tagGroup: String) {
+    public func addPreference(named: String, tagGroup: String) {
         if tagGroup != UATagPreferenceCenterInternal.deviceGroup {
             UAirship.push().addTags([named], group: tagGroup)
         } else {
@@ -47,7 +47,7 @@ class UATagPreferenceCenterInternal {
         UAirship.push().updateRegistration()
     }
     
-    func removePreference(named: String, tagGroup: String) {
+    public func removePreference(named: String, tagGroup: String) {
         if tagGroup != UATagPreferenceCenterInternal.deviceGroup {
             UAirship.push().removeTags([named], group: tagGroup)
         } else {
@@ -59,11 +59,11 @@ class UATagPreferenceCenterInternal {
     
     // MARK: - Preference Preparation & Saving 
     
-    func getTagData() {
+    public func getTagData() {
         self.dataHandler.prepareTags()
     }
     
-    class func savePreferences(preferences: [UATagPreference]?, style: UATagPreferencesStyle?, title: String?) {
+    public class func savePreferences(preferences: [UATagPreference]?, style: UATagPreferencesStyle?, title: String?) {
         
         if preferences != nil {
             

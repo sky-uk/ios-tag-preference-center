@@ -93,7 +93,7 @@ public class UATagPreferencesStyle: NSCopying {
     static let defaultFontName: String = "Helvetica Neue"
     static let defaultFontSize: CGFloat = 17
     
-    private static let defaultFileName = "UATagPreferenceCenterStyle"
+      static let defaultFileName = "UATagPreferenceCenterStyle"
     
     // MARK: - Initialization
     
@@ -263,9 +263,9 @@ public class UATagPreferencesStyle: NSCopying {
         return copyStyle
     }
     
-    // MARK: - Private Methods
+    // MARK: -   Methods
     
-    private func setDefaults() {
+      func setDefaults() {
         
         if let defaultFilePath = UATagPreferenceCenter.getResourceBundle()?.path(forResource: UATagPreferencesStyle.defaultFileName, ofType: "plist") {
             self.getStyleFromFile(named: defaultFilePath)
@@ -286,7 +286,7 @@ public class UATagPreferencesStyle: NSCopying {
         }
     }
     
-    private func getStyleFromFile(named: String) {
+      func getStyleFromFile(named: String) {
         let styles = NSDictionary(contentsOfFile: named)
         
         if styles != nil {
@@ -294,7 +294,7 @@ public class UATagPreferencesStyle: NSCopying {
         }
     }
     
-    private func validateStyleDict(with styleDict: NSDictionary) {
+      func validateStyleDict(with styleDict: NSDictionary) {
         for (styleName, styleValue) in styleDict {
             
             // check if value is a font
@@ -366,7 +366,7 @@ public class UATagPreferencesStyle: NSCopying {
         }
     }
     
-    private func convertHexToColor(hex: String) -> UIColor? {
+      func convertHexToColor(hex: String) -> UIColor? {
         
         if hex != "" && hex.hasPrefix("#") {
             let strippedHex = hex.substring(with: hex.index(hex.startIndex, offsetBy: 1)..<hex.endIndex)
